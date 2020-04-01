@@ -1,1 +1,11 @@
-.
+/* start */
+.fade-up {
+    opacity: 0;
+    transition: 1.3s;
+}
+
+/* end */
+.fade-up-on {
+    margin-top: 0;
+    opacity: 1;
+}

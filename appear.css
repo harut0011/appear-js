@@ -1,11 +1,40 @@
 /* start */
 .fade-up {
     opacity: 0;
-    transition: 1.3s;
+    margin-top: 200px;
+
+    animation-duration: .5s;
+    animation-fill-mode: forwards;
 }
 
-/* end */
-.fade-up-on {
-    margin-top: 0;
-    opacity: 1;
+@keyframes fade-up {
+    0% {
+        opacity: 0;
+        margin-top: 200px;
+    }
+
+    100% {
+        opacity: 1;
+        margin-top: 0;
+    }
+}
+
+.zoom-in {
+    opacity: 0;
+    transform: scale(0);
+    animation-duration: .5s;
+    animation-fill-mode: forwards;
+    transform-origin: center;
+}
+
+@keyframes zoom-in {
+    0% {
+        opacity: 0;
+        transform: scale(0);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1)
+    }
 }
